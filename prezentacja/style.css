@@ -1,0 +1,258 @@
+body {
+	background-color: #303030;
+	color: aliceblue;
+	margin: 0 !important;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+}
+.wrapper {
+	width: 100%;
+}
+header {
+	width: 100%;
+	padding: 40px 0;
+}
+#JR {
+	color: #338bff;
+	font-variant: small-caps;
+}
+#SS {
+	margin-left: 15px;
+	color: #81ff33;
+	font-variant: small-caps;
+}
+
+nav {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #ff3347;
+	text-align: center;
+	border-top: 1px solid #fa55dd;
+	border-bottom: 1px solid #fa55dd;
+	min-height: 40px;
+	z-index: 100;
+}
+.logo {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	font-size: 48px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Lato', sans-serif;
+}
+
+article {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+
+.socials {
+	width: 100%;
+	text-align: center;
+	background-color: #292929;
+}
+
+.socialdivs {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fb {
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.fb:hover {
+	background-color: #4848b0;
+}
+.yt {
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.yt:hover {
+	background-color: #a01717;
+}
+.gh {
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.gh:hover {
+	background-color: #181822;
+}
+.in {
+	width: 25%;
+	height: 155px;
+	float: left;
+	transition: 2s;
+}
+
+.in:hover {
+	background-image: linear-gradient(45deg, #ff8400, #ff00ff);
+}
+
+ol a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+}
+ol a:hover {
+	color: #ff3377;
+}
+
+ol > li {
+	float: left;
+	width: 250px;
+	height: 40px;
+	border-right: 1px dashed #751b1b;
+}
+
+ol > li:hover {
+	background-color: #c23939;
+}
+
+ol > li:first-child {
+	border-left: 1px dashed #751b1b;
+}
+
+ol {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 39px;
+	line-height: 200%;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	padding: 30px 0;
+	background-image: linear-gradient(#000000, #555555);
+}
+ol > li > ul {
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+}
+a:focus ~ ul {
+	display: block;
+}
+ol > li > ul > li {
+	border-top: 1px dashed #fa55dd;
+	position: relative;
+	background-color: #cf6969;
+	z-index: 100;
+}
+
+ol > li > ul > li:hover {
+	background-color: #ff00ff;
+}
+
+ol > li > ul > li:hover > a {
+	background-color: #972297;
+}
+
+.socialdivs > div > a {
+	display: block;
+}
+.tresc {
+	text-align: center;
+}
+img.boxshadow {
+	filter: drop-shadow(6px 6px 6px #ffffff);
+	width: 40%;
+}
+.kod2 {
+	width: 20%;
+}
+.blur {
+	filter: blur(5px);
+	width: 40%;
+}
+.kontrastfilter {
+	width: 40%;
+}
+
+.kontrastfilter:hover {
+	filter: contrast(300%);
+}
+.kontrastfilter2:hover {
+	filter: contrast(30%);
+}
+.kontrastfilter2 {
+	width: 40%;
+}
+.grayscale:hover {
+	filter: grayscale(100%);
+}
+.grayscale {
+	width: 40%;
+}
+.sepia:hover {
+	filter: sepia(100%);
+}
+.sepia {
+	width: 40%;
+}
+.saturate:hover {
+	filter: saturate(300%);
+}
+.saturate {
+	width: 40%;
+}
+article {
+	text-align: center;
+}
+.hue-rotate:hover {
+	filter: hue-rotate(50deg);
+}
+.hue-rotate {
+	width: 40%;
+}
+.invert:hover {
+	filter: invert(100%);
+}
+.invert {
+	width: 40%;
+}
+h1 {
+	font-size: 70px;
+}
+p {
+	font-size: 30px;
+}
+.brightness:hover{
+    filter:brightness(160%); 
+}
+.opacity:hover{
+    filter:opacity(50%); 
+}
+.brightness{
+    width: 40%;
+}
+.opacity{
+    width: 40%;
+}
+.kombinacja{
+    width: 40%;
+}
+.kombinacja:hover{
+    filter:grayscale(100%) blur(2px); 
+}
+
+#content {
+    background-color: #00CCFF ;
+}
+

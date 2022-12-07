@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="fontello.css/css/fontello.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <meta name="description" content="Serwis o grach z nintendo switch. Klasyki z lat '90.">
+    <meta name="keywords" content="gry, komputerowe, retro, nintendo, konsole, stare gry">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .queries{
+            width: 70vw;
+            
+        }
+    </style>
+
+
+</head>
+<body>
+        
+       <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <span id="JR">Joachim Rychliński</span><span id="SS">Szymon Sowula</span>
+                </div>
+            </header>
+            <nav>
+                <ol>
+                    <!-- <li>
+                        <a href="index.html">Strona główna</a>
+                    </li> -->
+                    <li>
+                        <a href="kolory.html" target="_blank">Kolory</a>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="wlasciwosci.html" target="_blank">Przydatne właściwości CSS-a</a>
+                       
+                    </li>
+                    <li>
+                        <a href="kolorystyka.html" target="_blank">Kolorystyka obrazków</a>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="autorzy.html" target="_blank">O autorach</a>
+                    </li>
+                </ol>
+            </nav>
+            <article>
+                <p>
+                    <h1>@media queries</h1>
+                    @media queries to funkcja CSS 3 umożliwiająca renderowanie treści w celu dostosowania ich do różnych warunków, takich jak rozdzielczość ekranu. @media queries się standardem zalecanym przez W3C w czerwcu 2012 roku i jest podstawą technologii responsywnego projektowania stron internetowych. 
+                </p>
+                <p>przykład zastosowania @media queries:</p>
+                <p><img src="zdjęcia/queries.png" alt="" class="queries" style="filter: hue-rotate(120deg) ;"></p>
+
+                
+                    <h1>Zmienne CSS</h1>
+                    <p>Zmienne CSS pomagają uniknąć powtórzeń, ułatwiają ponowne wykorzystanie stylów oraz wyeliminowanie niespójności.
+                         Wszystko, co trzeba zrobić, to zadeklarować je raz i wywołać w miejscu, w którym chcemy  ich użyć. Prawidłowe określenie 
+                         zmiennych to przypisanie im wartości w ten sposób:  
+                    </p>
+                    <p style=" font-family: cursive; text-align: left; color: rgb(44, 44, 139); background-color: rgb(218, 200, 200); border-radius: 20px; padding: 0 20px;" >
+                        :root{ <br>
+                            --color: yellow; <br>
+                            --width: 80vw;<br>
+                        }
+                    </p>
+                    <p>
+                        Prawidłowe zastosowanie tych zmiennych jest następujące: 
+                    </p>
+                    <p style=" font-family: cursive; text-align: left; color: rgb(44, 44, 139); background-color: rgb(218, 200, 200); border-radius: 20px; padding: 0 20px;">
+                        article{<br>
+                        background-color: var(--color); <br>
+                        max-width: var(--width); <br>
+                        }
+                    </p> 
+                    
+                    <p>
+                        <h1>Jednostki vw i vh.</h1>
+                        <p style="display: block; 
+                        margin-top: 16px; 
+                        text-align: center; 
+                        font-weight: bolder; 
+                        background: linear-gradient(90deg, green, white); 
+                        color: transparent; 
+                        -webkit-background-clip: text; 
+                        background-clip: text; 
+                        
+                      ">
+                            W języku CSS dzięki tym jednostkom możemy określać wielkość elementów w pełni responsywny sposób.
+                            Jednostki vh i vw są jednostkami które są wyznaczane na podstawie wysokości i szerokości okna przeglądarki.
+                            Np: jeżeli okno będzie mieć 1000px szerokości i 700px wysokości to 1vh będzie równy 7px, a 1vw będzie równy 10px.
+                            Używanie vh jest jednym z niewielu możliwości responsywnego określania wysokości elementu. 
+                            Zastosowanie: 
+                        </p>
+                        <p style=" font-family: cursive; text-align: left; color: rgb(44, 44, 139); background-color: rgb(218, 200, 200); border-radius: 20px; padding: 0 20px;">
+                        body{ <br>
+                        width: 100vw; <br>
+                        height: 100vh; <br>
+                        margin: 0 !important;<br>
+                        padding: 0 !important; <br>
+                        } <br><br>
+
+                        section{<br>
+                        height: 30%; <br>
+                        width: 80%; <br>
+                        } <br>
+
+                        </p>
+                    </p>
+                    <p>
+                        <h1 style="display: block; 
+                        margin-top: 16px; 
+                        text-align: center; 
+                        font-size: 52px; 
+                        font-weight: bolder; 
+                        background: linear-gradient(90deg, green, white); 
+                        color: transparent; 
+                        -webkit-background-clip: text; 
+                        background-clip: text; 
+                        
+                      ">Position: sticky;</h1>
+                        <p>
+                           Sticky jest jedną z wartości, które może przyjmować position. Jest używane wtedy gdy
+                           chcemy by nasz element <q>przykleił się</q> do określonej części okna. Najlepszym przykładem
+                           właściwości position: sticky; jest navigacja na tej stronie. Przykładowa składnia CSS, pozwalająca na stworzenie takiego elementu: 
+                        </p>
+                        <p style=" font-family: cursive; text-align: left; color: rgb(44, 44, 139); background-color: rgb(218, 200, 200); border-radius: 20px; padding: 0 20px;">
+                            nav{  <br>
+                                position: sticky; <br>
+                                position: -webkit-sticky; <br>
+                                top: 0; <br>
+                                width: 100%; <br>
+                                padding: 10px 0; <br>
+                                background-color: #ff3347; <br>
+                                text-align: center; <br>
+                                border-top: 1px solid #fa55dd; <br>
+                                border-bottom: 1px solid #fa55dd; <br>
+                                min-height: 40px; <br>
+                                z-index: 100; <br>
+                            } <br>
+                        </p>
+                    </p>
+                    <p> <h1>Tekst z gradientem</h1>
+                       <p>
+                       Tekst na stronie z gradientem robimy na stronie aby w  sposób przyzwoicie wyglądający wyróżnić
+                       Pewne słowa w tekście. Taką właściwość można uzyskać wpisując następujące linijki w CSS:
+                       </p>
+                       <p style=" font-family: cursive; text-align: left; color: rgb(44, 44, 139); background-color: rgb(218, 200, 200); border-radius: 20px; padding: 0 20px;">
+                            span{ <br>
+                              display: block; <br>
+                              margin-top: 16px; <br>
+                              text-align: center; <br>
+                              font-size: 32px; <br>
+                              font-weight: bolder; <br>
+                              background: linear-gradient(90deg, green, white); <br>
+                              color: transparent; <br>
+                              -webkit-background-clip: text; <br>
+                              background-clip: text; <br>
+                            } 
+
+                       </p>
+                       <p>
+                            <h1>Rezultat:
+
+                            </h1>
+                            <p> <span class="animate__animated animate__bounce animate__repeat-2 infinite" style="display: block; 
+                                margin-top: 16px; 
+                                text-align: center; 
+                                font-size: 52px; 
+                                font-weight: bolder; 
+                                background: linear-gradient(90deg, green, white); 
+                                color: transparent; 
+                                -webkit-background-clip: text; 
+                                background-clip: text; 
+                                
+                              "> Nasz wyróżniony tekst  </span></p>
+                        </p>
+                    </p>
+                </p>
+            </article>
+            <!-- <div class="socials">
+                <div class="socialdivs">
+                    <div class="fb"><a href="" target="_blank"><i class="icon-facebook-squared"></a></i></div>
+                    <div class="yt"><a href="" target="_blank"><i class="icon-youtube-play"></a></i></div>
+                    <div class="gh"><a href="" target="_blank"><i class="icon-github-squared"></a></i></div>
+                    <div class="in"><a href="" target="_blank"><i class="icon-instagram"></a></i></div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div> -->
+            <footer>
+                &copy; Rychliński & Sowula
+            </footer>
+       </div>   
+</body>
+</html> 
